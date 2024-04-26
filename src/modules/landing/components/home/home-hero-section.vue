@@ -1,25 +1,36 @@
 <template>
-  <div class="home-hero-section teal-900-bg">
-    <div class="vesicash-container">
-      <!-- HEADER TEXT -->
-      <h1 class="header-text text-center mgb-32 roobert-700 green-200">
-        Digital Escrow and Merchant of Record Technology (MoR) <br />
-        <span class="teal-200">for Businesses</span>
-      </h1>
+  <div class="hero-container">
+    <div class="content-wrapper vesicash-container">
+      <div class="content-block">
+        <div class="hero-title h0-text grey-900 mgb-28 roobert-700">
+          One payment platform for your business transactions
+        </div>
 
-      <!-- DESCRIPTION TEXT -->
-      <p class="description-text neutral-10 h6-text roobert-400 text-center">
-        Along with proprietary digital escrow, Vesicash provides Merchant of
-        Record Technology (MoR) to help businesses scale and grow with the most
-        secure, reliable, and cost-effective payments infrastructure.
-      </p>
+        <div class="hero-description h6-text grey-500 roobert-400 mgb-40">
+          Redstone makes payment collection and settlement  simple and reliable.
+        </div>
 
-      <!-- HERO IMAGE -->
-      <div class="hero-img-container mx-auto">
+        <div class="action-row">
+          <a
+            class="btn btn-lg btn-primary roobert-500"
+            href="https://app.vesicash.com/register-lander"
+            target="_blank"
+            >Get Started</a
+          >
+
+          <a
+            class="btn btn-lg btn-tertiary roobert-500"
+            href="https://app.vesicash.com/register-lander"
+            target="_blank"
+            >Contact Sales</a
+          >
+        </div>
+      </div>
+
+      <div class="hero-img-wrapper">
         <img
-          v-lazy="loadImage('home-hero-img.png', 'landing')"
-          alt="vesicash-escrow-dashboard"
-          class="mx-auto"
+          v-lazy="loadImage('hero-illustration.svg', 'landing')"
+          alt="Hero illustration"
         />
       </div>
     </div>
@@ -27,78 +38,114 @@
 </template>
 
 <script>
+import MoRGlobe from "@/shared/components/icon-comps/mor-globe";
+
 export default {
   name: "HomeHeroSection",
+
+  components: {
+    MoRGlobe,
+  },
 };
 </script>
 
 <style lang="scss" scoped>
-.home-hero-section {
-  .vesicash-container {
-    @include flex-column-center;
-    justify-content: flex-start;
+.hero-container {
+  background: getColor("neutral-10");
+  padding-top: toRem(98);
+  padding-bottom: toRem(140);
+  height: 90vh;
 
-    .header-text {
-      @include font-height(72, 85);
-      margin-top: toRem(200);
+  @include breakpoint-down(lg) {
+    padding: toRem(100) 0;
+  }
 
-      @include breakpoint-down(xl) {
-        @include font-height(64, 70);
+  @include breakpoint-down(md) {
+    padding: toRem(80) 0;
+  }
+
+  .content-wrapper {
+    @include flex-row-between-nowrap;
+
+    .content-block {
+      width: 60%;
+
+      .hero-title {
+        @include breakpoint-down(xl) {
+          @include font-height(52, 58);
+        }
+
+        @include breakpoint-down(lg) {
+          @include font-height(46, 54);
+        }
+
+        @include breakpoint-down(md) {
+          @include font-height(48, 54);
+          text-align: center;
+        }
+
+        @include breakpoint-down(sm) {
+          @include font-height(42, 54);
+        }
       }
 
-      @include breakpoint-down(lg) {
-        margin-top: toRem(180);
-        @include font-height(50, 60);
+      .hero-description {
+        width: 80%;
+
+        @include breakpoint-down(xl) {
+          @include font-height(20, 28);
+          width: 100%;
+        }
+
+        @include breakpoint-down(md) {
+          text-align: center;
+          width: 80%;
+          margin: 0 auto;
+        }
+
+        @include breakpoint-down(sm) {
+          @include font-height(19, 28);
+          width: 90%;
+        }
       }
 
-      @include breakpoint-down(md) {
-        margin-top: toRem(160);
-        @include font-height(40, 55);
-      }
+      .action-row {
+        @include flex-row-start-nowrap;
+        gap: toRem(24);
 
-      @include breakpoint-down(xs) {
-        br {
-          display: none;
+        .btn {
+          padding: toRem(17) toRem(52);
+          width: toRem(204);
+          white-space: nowrap;
+
+          @include breakpoint-down(md) {
+            margin: 0 auto;
+          }
         }
       }
     }
 
-    .description-text {
-      margin-bottom: toRem(100);
-      width: 76%;
-
-      @include breakpoint-down(xl) {
-        width: 80%;
-      }
-
-      @include breakpoint-down(lg) {
-        margin-bottom: toRem(80);
-        font-size: toRem(24);
-        width: 80%;
-      }
+    .hero-img-wrapper {
+      width: 40%;
 
       @include breakpoint-down(md) {
-        margin-bottom: toRem(60);
-        font-size: toRem(20);
-        width: 100%;
-      }
-
-      @include breakpoint-down(sm) {
-        margin-bottom: toRem(50);
-        font-size: toRem(18);
-      }
-    }
-
-    .hero-img-container {
-      position: relative;
-      width: 95%;
-
-      @include breakpoint-down(lg) {
-        width: 100%;
+        @include flex-row-center-nowrap;
+        margin-top: toRem(40);
       }
 
       img {
-        width: 100%;
+        width: toRem(520);
+        height: toRem(420);
+
+        @include breakpoint-down(xl) {
+          width: toRem(450);
+          height: toRem(380);
+        }
+
+        @include breakpoint-down(lg) {
+          width: toRem(420);
+          height: toRem(350);
+        }
       }
     }
   }

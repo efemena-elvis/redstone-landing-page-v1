@@ -3,9 +3,6 @@ import App from "./App.vue";
 import "./registerServiceWorker";
 import router from "./router";
 import store from "./store";
-import { prismic_routes } from "./router/prismic";
-import PrismicVue from "@prismicio/vue";
-const endpoint = "https://vesicashlander.cdn.prismic.io/api/v2";
 
 Vue.config.productionTip = false;
 
@@ -20,11 +17,6 @@ import "@/shared/assets/scss/app.scss";
 // IMPORT APPLICATION PLUGINS
 // =========================================
 import "@/plugins";
-
-Vue.use(PrismicVue, {
-  endpoint,
-  apiOptions: { routes: prismic_routes },
-});
 
 export const app = new Vue({
   router,

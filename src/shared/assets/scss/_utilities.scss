@@ -132,7 +132,7 @@ $indexes: 1, 9, 49, 99, 999, 2000;
 // ===========================
 // MARGIN SPACING
 // ===========================
-@for $i from 50 through 0 {
+@for $i from 80 through 0 {
   .mg-#{$i} {
     margin: toRem($i) !important;
   }

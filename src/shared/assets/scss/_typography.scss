@@ -22,6 +22,7 @@ $font-types: (
   // ==================================
   // TITLE FONTS VARIANT
   // ==================================
+  "h0": getFontVariant(72, $bold, 87),
   "h1": getFontVariant(64, $bold, 72),
   "h2": getFontVariant(40, $bold, 48),
   "h3": getFontVariant(32, $bold, 39),

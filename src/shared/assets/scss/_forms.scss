@@ -31,7 +31,7 @@ input[type="number"] {
 
 // FORM GROUP
 .form-group {
-  margin-bottom: toRem(24);
+  margin-bottom: toRem(32);
   position: relative;
 }
 
@@ -57,10 +57,10 @@ input[type="number"] {
 
 // FORM INPUT STYLING
 .form-control {
-  border: toRem(1) solid getColor("grey-300");
+  border: toRem(1) solid getColor("grey-200");
   @include generate-font-type("tertiary-2");
   background-color: getColor("neutral-10");
-  padding: toRem(8) toRem(16);
+  padding: toRem(14) toRem(16);
   color: getColor("grey-900");
   @include transition(0.3s);
   border-radius: toRem(8);

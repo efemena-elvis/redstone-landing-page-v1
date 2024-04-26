@@ -1,59 +1,55 @@
 <template>
-  <div>
+  <div class="home-container container-layout">
     <!-- HOME HERO SECTION -->
     <HomeHeroSection />
 
-    <!-- CLIENT BLOCK -->
-    <!-- <ClientBlock /> -->
+    <CustomizePaymentSection />
 
-    <!-- FEATURE SECTION -->
-    <FeatureSection />
+    <PaymentMethodSection />
 
-    <!-- BUSINESS AREA SECTION -->
-    <BusinessAreaSection />
+    <ServiceSection />
 
-    <!-- TOOLS SECTION -->
-    <ToolsSection />
+    <!-- API DOC SECTION -->
+    <APIDocSection />
 
-    <!-- API CODE BLOCK -->
-    <APICodeBlock />
-
-    <!-- CTA BLOCK -->
-    <CTABlock />
+    <!-- CALL TO ACTION SECTION -->
+    <CallToActionSection />
   </div>
 </template>
 
 <script>
 import HomeHeroSection from "@/modules/landing/components/home/home-hero-section";
-import ClientBlock from "@/modules/landing/components/home/client-block";
-import CTABlock from "@/modules/landing/components/home/cta-block";
+import CustomizePaymentSection from "@/modules/landing/components/home/customize-payment-section";
+import PaymentMethodSection from "@/modules/landing/components/home/payment-method-section";
+import ServiceSection from "@/modules/landing/components/home/service-section";
 
 export default {
-  name: "Home",
+  name: "RedstoneHomePage",
+
+  metaInfo: {
+    title: "Redstone",
+    // titleTemplate: "%s - Redstone",
+  },
 
   components: {
     HomeHeroSection,
-    ClientBlock,
-    CTABlock,
-    APICodeBlock: () =>
+    CustomizePaymentSection,
+    PaymentMethodSection,
+    ServiceSection,
+    APIDocSection: () =>
       import(
-        /* webpackChunkName: "landing-module" */ "@/modules/landing/components/home/api-doc-block"
+        /* webpackChunkName: "landing-module-v2" */ "@/modules/landing/components/home/api-doc-section"
       ),
-    FeatureSection: () =>
+    CallToActionSection: () =>
       import(
-        /* webpackChunkName: "landing-module" */ "@/modules/landing/components/home/feature-section"
-      ),
-    BusinessAreaSection: () =>
-      import(
-        /* webpackChunkName: "landing-module" */ "@/modules/landing/components/home/business-area-section"
-      ),
-    ToolsSection: () =>
-      import(
-        /* webpackChunkName: "landing-module" */ "@/modules/landing/components/home/tools-section"
+        /* webpackChunkName: "landing-module-v2" */ "@/modules/landing/components/home/call-to-action-section"
       ),
   },
 };
 </script>
 
 <style lang="scss" scoped>
+.home-container {
+  min-height: 100vh;
+}
 </style>

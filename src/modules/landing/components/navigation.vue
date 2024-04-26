@@ -1,12 +1,16 @@
 <template>
   <div
     class="fixed-top w-100 index-999 smooth-transition neutral-10-bg"
+    :class="{ 'scrolling-up': scrolled }"
     ref="navbar"
   >
     <div class="vesicash-container">
       <div class="navigation-section smooth-transition">
-        <router-link :to="{ name: 'VesicashHomeV2' }" class="brand-logo">
-          <VesicashBrandLogo />
+        <router-link :to="{ name: 'RedstoneHome' }" class="brand-logo">
+          <img
+            v-lazy="loadImage('redstone-logo.svg', 'landing')"
+            alt="Redstone Logo"
+          />
         </router-link>
 
         <!-- NAVIGATIONS -->
@@ -16,71 +20,53 @@
             @click="toggleMobileDropdown"
           ></div>
 
-          <!-- NAV ITEMS -->
-          <div class="nav-items">
-            <!-- <router-link :to="{ name: 'VesicashHome' }" class="nav-item"
-            >Home</router-link
-          > -->
-            <router-link :to="{ name: 'VesicashSolutions' }" class="nav-item"
-              >What we do</router-link
-            >
-            <router-link :to="{ name: 'VesicashAbout' }" class="nav-item"
-              >About us</router-link
-            >
-          </div>
-
           <!-- NAV BUTTONS -->
           <div class="nav-buttons">
             <a
               :href="`${$app_url}/login`"
               target="_blank"
-              class="btn btn-tertiary btn-md roobert-500 mgr-16"
-              >Sign In</a
-            >
-
-            <a
-              :href="`${$app_url}/register-lander`"
-              target="_blank"
-              class="btn btn-primary btn-md roobert-500"
-              >Create an account</a
+              class="btn btn-tertiary btn-md roobert-500"
+              >Contact Sales</a
             >
           </div>
         </div>
       </div>
-
-      <!-- MOBILE MENU -->
-      <template v-if="show_mobile_dropdown">
-        <MobileMenu @closeMenu="toggleMobileDropdown" />
-      </template>
     </div>
+    <div class="scroll-indicator" :style="{ width: `${page_scrolled}%` }"></div>
   </div>
 </template>
 
 <script>
-import VesicashBrandLogo from "@/shared/components/icon-comps/vesicash-brand-logo";
-
 export default {
   name: "Navigation",
 
-  components: {
-    VesicashBrandLogo,
-    MobileMenu: () =>
-      import(
-        /* webpackChunkName: 'MobileMenu' */ "@/modules/landing/components/mobile-menu"
-      ),
+  components: {},
+
+  props: {
+    scrolled: {
+      type: Boolean,
+      default: false,
+    },
   },
 
   data: () => ({
-    show_mobile_dropdown: false,
+    page_scrolled: 0,
   }),
 
   mounted() {
-    window.onscroll = () => {
-      this.$refs.navbar?.classList.toggle("scrolling-up", window.scrollY > 20);
-    };
+    this.checkMobileView();
+  },
+
+  beforeDestroy() {
+    window.removeEventListener("scroll", this.updateScrollExtent);
   },
 
   methods: {
+    updateScrollExtent() {
+      const totalHeight = document.body.scrollHeight - window.innerHeight;
+      this.page_scrolled = (window.scrollY / totalHeight) * 100;
+    },
+
     toggleMobileDropdown() {
       this.show_mobile_dropdown = !this.show_mobile_dropdown;
     },
@@ -107,7 +93,7 @@ export default {
       font-size: toRem(25);
       display: none;
 
-      @include breakpoint-down(md) {
+      @include breakpoint-custom-down(1020) {
         display: unset;
       }
     }
@@ -115,44 +101,35 @@ export default {
     .nav-items {
       @include flex-row-end-nowrap;
 
-      @include breakpoint-down(md) {
+      @include breakpoint-custom-down(1020) {
         display: none;
-      }
-
-      .nav-item {
-        @include generate-font-type("secondary-1");
-        font-family: "Roobert-Medium", sans-serif;
-        color: getColor("grey-600");
-        @include transition(0.4s);
-        margin-right: toRem(56);
-
-        &:hover,
-        &.router-link-exact-active {
-          color: getColor("green-500");
-        }
-
-        @include breakpoint-custom-down(920) {
-          margin-right: toRem(35);
-        }
       }
     }
 
     .nav-buttons {
       @include flex-row-end-nowrap;
 
-      @include breakpoint-down(md) {
+      @include breakpoint-custom-down(1020) {
         display: none;
       }
 
       .btn {
-        font-size: toRem(16);
+        font-size: toRem(15.75);
+
+        @include breakpoint-custom-down(1100) {
+          @include font-height(15.5, 21);
+        }
+
+        @include breakpoint-custom-down(1020) {
+          @include font-height(16, 22);
+        }
       }
 
       .btn-tertiary {
         padding: toRem(11) toRem(37);
 
         @include breakpoint-custom-down(920) {
-          padding: toRem(11) toRem(30);
+          padding: toRem(12) toRem(30);
           margin-right: toRem(12);
         }
       }
@@ -161,7 +138,7 @@ export default {
         padding: toRem(11.75) toRem(20);
 
         @include breakpoint-custom-down(920) {
-          padding: toRem(11.75) toRem(15);
+          padding: toRem(12) toRem(15);
         }
       }
     }
@@ -179,5 +156,13 @@ export default {
 
 .scrolling-down {
   display: none;
+}
+
+.scroll-indicator {
+  height: toRem(3);
+  background: getColor("teal-500");
+  width: 40%;
+  position: fixed;
+  left: 0;
 }
 </style>

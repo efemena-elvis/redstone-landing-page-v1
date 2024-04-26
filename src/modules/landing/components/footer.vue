@@ -4,25 +4,25 @@
       <div class="row mgb-50">
         <div class="col-12 col-sm-12 col-md-4 footer-left">
           <div class="brand-logo mgb-28">
-            <VesicashBrandLogo />
+            <img
+              v-lazy="loadImage('redstone-logo.svg', 'landing')"
+              alt="Redstone Logo"
+            />
           </div>
 
-          <a href="mailto:support@vesicash.com" class="info-text mgb-16"
-            >support@vesicash.com</a
-          >
-
-          <a href="mailto:support@vesicash.co.uk" class="info-text mgb-16"
-            >support@vesicash.co.uk</a
-          >
-
-          <!-- <a href="tel:+2347039914767" class="info-text">+234 703 991 4767</a> -->
+          <a
+            href="mailto:support@redstonestonpgs.com
+"
+            class="info-text mgb-16"
+            >support@redstonestonpgs.com
+          </a>
 
           <!-- SOCIAL ICONS -->
           <div class="social-icons mgt-32">
             <a
               href="https://www.instagram.com/vesicash/"
-              target="_blank"
               class="social-link"
+              target="_blank"
             >
               <div class="icon icon-instagram"></div>
             </a>
@@ -55,80 +55,25 @@
 
         <!-- NAVIGATION LINKS CONTAINER -->
         <div class="col-12 col-sm-12 col-md-8 footer-right mt-5 mt-md-0">
-          <div class="row">
-            <div class="col-12 col-sm-3 mb-5 mb-sm-0">
+          <div class="row justify-content-end">
+            <div class="col-12 col-sm-4 mb-5 mb-sm-0">
               <div class="nav-item fw-700 mgb-24">Product</div>
 
-              <router-link to="/solutions" class="nav-item nav-item-link"
-                >What we do</router-link
-              >
-              <!-- <a href="" class="nav-item nav-item-link">Instant Excrow</a> -->
               <router-link to="/privacy-policy" class="nav-item nav-item-link"
                 >Privacy Policy</router-link
               >
+
               <router-link to="/terms" class="nav-item nav-item-link"
                 >Terms of Use</router-link
               >
-              <router-link to="/faqs" class="nav-item nav-item-link"
-                >FAQs</router-link
-              >
             </div>
 
-            <div class="col-12 col-sm-3 mb-5 mb-sm-0">
+            <div class="col-12 col-sm-4 mb-5 mb-sm-0">
               <div class="nav-item fw-700 mgb-24">Company</div>
 
-              <router-link to="/about" class="nav-item nav-item-link"
-                >About Us</router-link
-              >
-              <a :href="$blog_url" class="nav-item nav-item-link">Blog</a>
-
               <router-link to="/contact" class="nav-item nav-item-link"
-                >Contact</router-link
+                >Contact Sales</router-link
               >
-            </div>
-
-            <div class="col-12 col-sm-3 mb-5 mb-sm-0">
-              <div class="nav-item fw-700 mgb-24">Developer</div>
-
-              <router-link to="/developers" class="nav-item nav-item-link"
-                >Overview</router-link
-              >
-              <a
-                href="https://docs.vesicash.com/"
-                target="_blank"
-                class="nav-item nav-item-link"
-                >Documentation</a
-              >
-              <router-link to="" class="nav-item nav-item-link">
-                <span class="grey-400 disabled" style="cursor: not-allowed"
-                  >Service Status</span
-                >
-                <span
-                  class="coming-soon-indicator text-no-wrap roobert-400 yellow-600"
-                  >Coming Soon</span
-                >
-              </router-link>
-            </div>
-
-            <div class="col-12 col-sm-3">
-              <!-- <div class="nav-item fw-700 mgb-24">Payments processed by</div> -->
-
-              <!-- PRODUCT DISPLAY -->
-              <div class="product-display">
-                <!-- TOP IMAGE -->
-                <!-- <img
-                  v-lazy="loadImage('flutterwave.png', 'landing')"
-                  alt
-                  class="top-img mgb-8"
-                /> -->
-
-                <!-- DESCRIPTION -->
-                <div class="bottom-text tertiary-1-text roobert-400">
-                  <div class="content">A member of the stellar</div>
-                  <img v-lazy="loadImage('stellar.png', 'landing')" alt />
-                  <div class="content">network</div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -139,7 +84,7 @@
         <div
           class="copyright-text col-12 grey-900 text-center tertiary-1-text roobert-400"
         >
-          Copyright {{ current_year }}. Vesicash Innovative Technologies.
+          Copyright {{ current_year }}. RedStone, Zambia Ltd.
         </div>
       </div>
     </div>
@@ -290,7 +235,7 @@ export default {
 
   .copyright-row {
     border-top: toRem(0.5) solid getColor("grey-100");
-    padding: toRem(50) 0 toRem(84);
+    padding: toRem(50) 0;
 
     .copyright-text {
       @include breakpoint-down(sm) {
