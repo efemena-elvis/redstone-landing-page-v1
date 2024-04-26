@@ -53,17 +53,17 @@
 
         <div class="col-12 col-sm-12 col-md-3 footer-right mgt-52">
           <a
-            href="mailto:support@redstonestonpgs.com
+            href="mailto:support@redstonepgs.com
 "
             class="info-text mgb-16"
-            >support@redstonestonpgs.com
+            >support@redstonepgs.com
           </a>
 
           <a
-            href="mailto:sales@redstonestonpgs.com
+            href="mailto:sales@redstonepgs.com
 "
             class="info-text mgb-16"
-            >sales@redstonestonpgs.com
+            >sales@redstonepgs.com
           </a>
         </div>
 
@@ -98,7 +98,7 @@
         <div
           class="copyright-text col-12 grey-600 text-center tertiary-1-text roobert-400"
         >
-          Copyright {{ current_year }}. RedStone, Zambia Ltd.
+          Copyright {{ current_year }}. Redstone, Zambia Ltd.
         </div>
       </div>
     </div>

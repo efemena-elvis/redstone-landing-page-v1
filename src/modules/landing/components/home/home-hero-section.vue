@@ -55,6 +55,8 @@ export default {
   padding-top: toRem(98);
   padding-bottom: toRem(140);
   height: 90vh;
+  @include flex-row-between-nowrap;
+  align-items: center;
 
   @include breakpoint-down(lg) {
     padding: toRem(100) 0;
@@ -126,6 +128,8 @@ export default {
     }
 
     .hero-img-wrapper {
+      position: relative;
+      left: toRem(40);
       width: 40%;
 
       @include breakpoint-down(md) {
