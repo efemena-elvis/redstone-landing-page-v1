@@ -12,7 +12,7 @@ import { getStorage } from "@/utilities/auth-utils";
 class serviceApi {
   // INSTANTIATE BASE API URL
   constructor() {
-    axios.defaults.baseURL = VESICASH_API_URL;
+    axios.defaults.baseURL = "";
     this.injectTokenInterceptor();
   }
 
