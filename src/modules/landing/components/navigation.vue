@@ -23,7 +23,7 @@
           <!-- NAV BUTTONS -->
           <div class="nav-buttons">
             <a
-              :href="`${$app_url}/login`"
+              :href="`${$app_url}/contact-sales`"
               target="_blank"
               class="btn btn-tertiary btn-md roobert-500"
               >Contact Sales</a
