@@ -1,24 +1,22 @@
 <template>
   <div class="footer-section">
     <div class="vesicash-container">
-      <div class="row mgb-50">
-        <div class="col-12 col-sm-12 col-md-4 footer-left">
-          <div class="brand-logo mgb-28">
+      <div class="row mgb-50 justify-content-between">
+        <div class="col-12 col-sm-12 col-md-6 footer-left">
+          <div class="brand-logo mgb-24">
             <img
               v-lazy="loadImage('redstone-logo.svg', 'landing')"
               alt="Redstone Logo"
             />
           </div>
 
-          <a
-            href="mailto:support@redstonestonpgs.com
-"
-            class="info-text mgb-16"
-            >support@redstonestonpgs.com
-          </a>
+          <div class="tagline grey-700 roobert-400">
+            Redstone makes payment collection and settlement  simple and
+            reliable.
+          </div>
 
           <!-- SOCIAL ICONS -->
-          <div class="social-icons mgt-32">
+          <div class="social-icons mgt-32 d-none">
             <a
               href="https://www.instagram.com/vesicash/"
               class="social-link"
@@ -53,8 +51,24 @@
           </div>
         </div>
 
+        <div class="col-12 col-sm-12 col-md-3 footer-right mgt-52">
+          <a
+            href="mailto:support@redstonestonpgs.com
+"
+            class="info-text mgb-16"
+            >support@redstonestonpgs.com
+          </a>
+
+          <a
+            href="mailto:sales@redstonestonpgs.com
+"
+            class="info-text mgb-16"
+            >sales@redstonestonpgs.com
+          </a>
+        </div>
+
         <!-- NAVIGATION LINKS CONTAINER -->
-        <div class="col-12 col-sm-12 col-md-8 footer-right mt-5 mt-md-0">
+        <div class="col-12 col-sm-12 col-md-8 footer-right mt-5 mt-md-0 d-none">
           <div class="row justify-content-end">
             <div class="col-12 col-sm-4 mb-5 mb-sm-0">
               <div class="nav-item fw-700 mgb-24">Product</div>
@@ -82,7 +96,7 @@
       <!-- COPYRIGHT TEXT -->
       <div class="row copyright-row">
         <div
-          class="copyright-text col-12 grey-900 text-center tertiary-1-text roobert-400"
+          class="copyright-text col-12 grey-600 text-center tertiary-1-text roobert-400"
         >
           Copyright {{ current_year }}. RedStone, Zambia Ltd.
         </div>
@@ -114,13 +128,15 @@ export default {
 
 <style lang="scss" scoped>
 .footer-section {
-  margin-top: toRem(110);
+  margin-top: toRem(100);
 
   @include breakpoint-down(md) {
     margin-top: toRem(80);
   }
 
   .footer-left {
+    // @include flex-column-start-center;
+
     .brand-logo {
       svg {
         width: toRem(190);
@@ -128,15 +144,9 @@ export default {
       }
     }
 
-    .info-text {
-      @include generate-font-type("tertiary-1");
-      font-family: "Roobert-Medium", sans-serif;
-      color: getColor("grey-900");
-      display: block;
-
-      &:hover {
-        color: getColor("green-600");
-      }
+    .tagline {
+      @include font-height(19, 32);
+      width: 60%;
     }
 
     .social-icons {
@@ -169,6 +179,19 @@ export default {
           }
         }
       }
+    }
+  }
+
+  .info-text {
+    // @include generate-font-type("tertiary-1");
+    @include font-height(18, 22);
+    color: getColor("grey-600");
+    font-family: "Roobert-Medium", sans-serif;
+    color: getColor("grey-700");
+    display: block;
+
+    &:hover {
+      color: getColor("green-600");
     }
   }
 

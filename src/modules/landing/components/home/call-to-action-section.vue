@@ -17,16 +17,16 @@
 
       <!-- BUTTON ROW -->
       <div class="button-row">
-        <router-link
+        <!-- <router-link
           to="/contact"
           class="btn btn-secondary btn-md mgr-16 roobert-500"
           >Get Started</router-link
-        >
+        > -->
 
         <a
-          :href="`${$app_url}/register-lander`"
+          :href="`${$app_url}/contact-sales`"
           target="_blank"
-          class="btn btn-primary btn-md mgl-16 roobert-500"
+          class="btn btn-primary btn-md roobert-500"
           >Contact Sales</a
         >
       </div>
@@ -122,6 +122,7 @@ export default {
 
       .btn {
         font-size: toRem(16);
+        width: toRem(260);
       }
 
       .btn-secondary {

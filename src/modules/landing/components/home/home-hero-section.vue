@@ -11,16 +11,16 @@
         </div>
 
         <div class="action-row">
-          <a
+          <!-- <a
             class="btn btn-lg btn-primary roobert-500"
             href="https://app.vesicash.com/register-lander"
             target="_blank"
             >Get Started</a
-          >
+          > -->
 
           <a
-            class="btn btn-lg btn-tertiary roobert-500"
-            href="https://app.vesicash.com/register-lander"
+            class="btn btn-lg btn-primary roobert-500"
+            :href="`${$app_url}/contact-sales`"
             target="_blank"
             >Contact Sales</a
           >

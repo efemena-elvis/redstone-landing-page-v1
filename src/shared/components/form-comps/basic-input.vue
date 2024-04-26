@@ -71,7 +71,7 @@
 
     <!-- DROP DOWN SELECT AREA -->
     <template v-if="is_phone_type">
-      <template name="drop-select-area" v-if="show_dropdown">
+      <template v-if="show_dropdown">
         <CountryDropSelect
           :countries="countries_data"
           @countrySelected="current_country = $event"
@@ -80,7 +80,7 @@
     </template>
 
     <template v-if="is_currency_type">
-      <template name="drop-select-area" v-if="show_dropdown">
+      <template v-if="show_dropdown">
         <CountryDropSelect
           :allow_search="
             currency_options.length
