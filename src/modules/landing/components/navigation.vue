@@ -54,7 +54,7 @@ export default {
   }),
 
   mounted() {
-    this.checkMobileView();
+    // this.checkMobileView();
   },
 
   beforeDestroy() {
