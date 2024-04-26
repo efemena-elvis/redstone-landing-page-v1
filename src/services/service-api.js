@@ -4,12 +4,7 @@
 import axios from "axios";
 import { urlHash } from "./service-route";
 import { getStorage } from "@/utilities/auth-utils";
-import {
-  VESICASH_API_URL,
-  VESICASH_PRIVATE_KEY_TOKEN,
-  VESICASH_PUBLIC_KEY_TOKEN,
-  VESICASH_AUTH_TOKEN,
-} from "@/utilities/constant";
+// import { VESICASH_API_URL } from "@/utilities/constant";
 
 // ===============================
 // SERVICE API CLSS
@@ -98,23 +93,24 @@ class serviceApi {
   // SETUP REQUEST HEADERS
   // ===============================
   getHeaders(attach = false) {
-    const authUserToken = getStorage(VESICASH_AUTH_TOKEN) || null;
+    // const authUserToken = getStorage();
+    const authUserToken = null;
 
     return attach
       ? {
           headers: {
             "Content-Type": "multipart/form-data",
             Authorization: `Bearer ${authUserToken}`,
-            "V-PUBLIC-KEY": VESICASH_PUBLIC_KEY_TOKEN,
-            "V-PRIVATE-KEY": VESICASH_PRIVATE_KEY_TOKEN,
+            "V-PUBLIC-KEY": "",
+            "V-PRIVATE-KEY": "",
           },
         }
       : {
           headers: {
             "Content-Type": "application/json",
             Authorization: `Bearer ${authUserToken}`,
-            "V-PUBLIC-KEY": VESICASH_PUBLIC_KEY_TOKEN,
-            "V-PRIVATE-KEY": VESICASH_PRIVATE_KEY_TOKEN,
+            "V-PUBLIC-KEY": "",
+            "V-PRIVATE-KEY": "",
           },
         };
   }

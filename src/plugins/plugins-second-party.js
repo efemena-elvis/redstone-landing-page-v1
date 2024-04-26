@@ -1,5 +1,6 @@
 import Vue from "vue";
-import { REDSTONE_APP_URL, VESICASH_BLOG_URL } from "@/utilities/constant";
+// import { REDSTONE_APP_URL, VESICASH_BLOG_URL } from "@/utilities/constant";
+import { REDSTONE_APP_URL } from "@/utilities/constant";
 
 // ===========================
 // APPLICATION MIXINS
@@ -36,4 +37,4 @@ Vue.mixin({
 // ===============================================
 Vue.prototype.$bus = new Vue();
 Vue.prototype.$app_url = REDSTONE_APP_URL;
-Vue.prototype.$blog_url = VESICASH_BLOG_URL;
+// Vue.prototype.$blog_url = VESICASH_BLOG_URL;
