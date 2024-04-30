@@ -25,7 +25,6 @@
 
         <a
           :href="`${$app_url}/contact-sales`"
-          target="_blank"
           class="btn btn-primary btn-md roobert-500"
           >Contact Sales</a
         >
@@ -73,11 +72,12 @@ export default {
       width: 85%;
 
       @include breakpoint-down(lg) {
-        @include font-height(58, 72);
+        @include font-height(50, 68);
       }
 
       @include breakpoint-down(md) {
         @include font-height(44, 65);
+        width: 100%;
       }
 
       @include breakpoint-down(sm) {
@@ -96,19 +96,19 @@ export default {
     .description-text {
       width: 82%;
 
-      @include breakpoint-down(lg) {
-        font-size: toRem(17);
-        width: 60%;
+      @include breakpoint-down(xl) {
+        font-size: toRem(22);
+        width: 90%;
       }
 
-      @include breakpoint-down(md) {
-        width: 80%;
+      @include breakpoint-down(lg) {
+        font-size: toRem(20);
+        width: 100%;
       }
 
       @include breakpoint-down(sm) {
         margin-bottom: toRem(35) !important;
         font-size: toRem(16);
-        width: 90%;
       }
     }
 

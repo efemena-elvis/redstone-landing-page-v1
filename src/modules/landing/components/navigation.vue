@@ -15,16 +15,15 @@
 
         <!-- NAVIGATIONS -->
         <div class="navigations">
-          <div
+          <!-- <div
             class="menu-icon icon-hamburger grey-500 f-size-32 pointer"
             @click="toggleMobileDropdown"
-          ></div>
+          ></div> -->
 
           <!-- NAV BUTTONS -->
           <div class="nav-buttons">
             <a
               :href="`${$app_url}/contact-sales`"
-              target="_blank"
               class="btn btn-tertiary btn-md roobert-500"
               >Contact Sales</a
             >
@@ -109,9 +108,9 @@ export default {
     .nav-buttons {
       @include flex-row-end-nowrap;
 
-      @include breakpoint-custom-down(1020) {
-        display: none;
-      }
+      // @include breakpoint-custom-down(1020) {
+      //   display: none;
+      // }
 
       .btn {
         font-size: toRem(15.75);
@@ -130,7 +129,11 @@ export default {
 
         @include breakpoint-custom-down(920) {
           padding: toRem(12) toRem(30);
-          margin-right: toRem(12);
+        }
+
+        @include breakpoint-down(sm) {
+          padding: toRem(10) toRem(20);
+          font-size: toRem(15);
         }
       }
 

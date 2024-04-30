@@ -21,7 +21,7 @@
       </div>
 
       <div class="row justify-content-between mgt-20">
-        <div class="col-12 col-6 col-md-5 mgb-48">
+        <div class="col-12 col-md-6 col-lg-5 mgb-48">
           <div class="payment-card">
             <div class="title-copy h3-text grey-900 mgb-12">USSD</div>
 
@@ -33,7 +33,7 @@
           </div>
         </div>
 
-        <div class="col-12 col-6 col-md-5 mgb-48">
+        <div class="col-12 col-md-6 col-lg-5 mgb-48">
           <div class="payment-card">
             <div class="title-copy h3-text grey-900 mgb-12">Bank Transfer</div>
 
@@ -45,7 +45,7 @@
           </div>
         </div>
 
-        <div class="col-12 col-6 col-md-5">
+        <div class="col-12 col-md-6 col-lg-5 mgb-48">
           <div class="payment-card">
             <div class="title-copy h3-text grey-900 mgb-12">Card</div>
 
@@ -58,7 +58,7 @@
           </div>
         </div>
 
-        <div class="col-12 col-6 col-md-5">
+        <div class="col-12 col-md-6 col-lg-5">
           <div class="payment-card">
             <div class="title-copy h3-text grey-900 mgb-12">Mobile Money</div>
 
@@ -95,6 +95,10 @@ export default {
 
   .title-top-row {
     margin-bottom: toRem(80);
+
+    @include breakpoint-down(md) {
+      margin-bottom: toRem(20);
+    }
   }
 
   .section-img {
@@ -102,6 +106,18 @@ export default {
     left: toRem(400);
     z-index: 3;
     top: toRem(-20);
+
+    @include breakpoint-down(lg) {
+      left: toRem(280);
+
+      img {
+        width: 80%;
+      }
+    }
+
+    @include breakpoint-down(md) {
+      display: none;
+    }
   }
 
   .section-rect {
@@ -121,31 +137,72 @@ export default {
     .title-text {
       width: 90%;
 
+      @include breakpoint-down(xl) {
+        @include font-height(54, 64);
+        width: 86%;
+      }
+
       @include breakpoint-down(lg) {
-        @include font-height(32, 40);
+        @include font-height(38, 46);
+        margin-bottom: toRem(20) !important;
       }
 
       @include breakpoint-down(sm) {
-        @include font-height(30, 40);
+        @include font-height(32, 42);
       }
     }
 
     .description-text {
       width: 70%;
 
+      @include breakpoint-down(xl) {
+        font-size: toRem(21);
+        width: 96%;
+      }
+
       @include breakpoint-down(lg) {
-        font-size: toRem(18);
-        width: 95%;
+        @include font-height(19, 30);
       }
 
       @include breakpoint-down(sm) {
-        font-size: toRem(16);
+        font-size: toRem(18);
         width: 100%;
       }
     }
   }
 
   .payment-card {
+    @include breakpoint-down(md) {
+      margin-bottom: toRem(12);
+    }
+
+    .title-copy {
+      @include breakpoint-down(xl) {
+        @include font-height(28, 36);
+      }
+
+      @include breakpoint-down(lg) {
+        @include font-height(25, 34);
+      }
+
+      @include breakpoint-down(sm) {
+        @include font-height(23, 34);
+      }
+    }
+
+    .content-copy {
+      @include breakpoint-down(xl) {
+        @include font-height(18, 30);
+      }
+
+      @include breakpoint-down(lg) {
+        @include font-height(17.5, 28);
+      }
+
+      @include breakpoint-down(sm) {
+        @include font-height(16, 28);
+      }
+    }
   }
 }
 </style>

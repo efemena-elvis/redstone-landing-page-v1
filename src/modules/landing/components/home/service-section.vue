@@ -1,15 +1,17 @@
 <template>
-  <div class="payment-section green-50-bg">
+  <div class="payment-section green-50-bg overflow-hidden">
     <div class="vesicash-container">
-      <div class="row mgb-80">
+      <div class="row title-top-row">
         <div class="img-stack">
           <img v-lazy="loadImage('design-stack.svg', 'landing')" alt="" />
         </div>
 
-        <div class="col-12 col-md-6"></div>
+        <div class="col-12 col-md-6 order-1 order-lg-0"></div>
 
         <!-- COPY SECTION -->
-        <div class="copy-section col-12 col-md-5 mb-5 mb-md-0">
+        <div
+          class="copy-section col-12 col-md-6 col-lg-5 order-0 order-lg-1 mb-5 mb-md-0"
+        >
           <h2 class="title-text h1-text roobert-700 grey-900 mgb-24">
             Redstone is right for you
           </h2>
@@ -21,7 +23,7 @@
       </div>
 
       <div class="row justify-content-between">
-        <div class="col-12 col-6 col-md-5 mgb-50">
+        <div class="col-12 col-md-6 col-lg-5 mgb-50">
           <div class="payment-card">
             <div class="icon-wrapper">
               <img
@@ -42,7 +44,7 @@
           </div>
         </div>
 
-        <div class="col-12 col-6 col-md-5 mgb-50">
+        <div class="col-12 col-md-6 col-lg-5 mgb-50">
           <div class="payment-card">
             <div class="icon-wrapper">
               <img
@@ -63,7 +65,7 @@
           </div>
         </div>
 
-        <div class="col-12 col-6 col-md-5 mgt-30">
+        <div class="col-12 col-md-6 col-lg-5 mgt-30">
           <div class="payment-card">
             <div class="icon-wrapper">
               <img
@@ -84,7 +86,7 @@
           </div>
         </div>
 
-        <div class="col-12 col-6 col-md-5 mgt-40">
+        <div class="col-12 col-md-6 col-lg-5 mgt-40 img-column">
           <img v-lazy="loadImage('coins.svg', 'landing')" alt="" />
         </div>
       </div>
@@ -115,6 +117,18 @@ export default {
     position: absolute;
     left: 0;
     top: 0;
+
+    @include breakpoint-down(lg) {
+      display: none;
+    }
+  }
+
+  .title-top-row {
+    margin-bottom: toRem(80);
+
+    @include breakpoint-down(md) {
+      margin-bottom: toRem(20);
+    }
   }
 
   .row {
@@ -123,25 +137,34 @@ export default {
     .title-text {
       //   width: 90%;
 
+      @include breakpoint-down(xl) {
+        @include font-height(54, 64);
+        width: 86%;
+      }
+
       @include breakpoint-down(lg) {
-        @include font-height(32, 40);
+        @include font-height(38, 46);
       }
 
       @include breakpoint-down(sm) {
-        @include font-height(30, 40);
+        @include font-height(32, 42);
       }
     }
 
     .description-text {
       //   width: 90%;
 
+      @include breakpoint-down(xl) {
+        font-size: toRem(21);
+        width: 96%;
+      }
+
       @include breakpoint-down(lg) {
-        font-size: toRem(18);
-        width: 95%;
+        @include font-height(19, 30);
       }
 
       @include breakpoint-down(sm) {
-        font-size: toRem(16);
+        font-size: toRem(18);
         width: 100%;
       }
     }
@@ -156,6 +179,55 @@ export default {
       margin-bottom: toRem(24);
       @include flex-row-center-nowrap;
       align-items: center;
+    }
+
+    .title-copy {
+      @include breakpoint-down(xl) {
+        @include font-height(28, 36);
+      }
+
+      @include breakpoint-down(lg) {
+        @include font-height(25, 34);
+      }
+
+      @include breakpoint-down(sm) {
+        @include font-height(23, 34);
+      }
+    }
+
+    .content-copy {
+      @include breakpoint-down(xl) {
+        @include font-height(18, 30);
+      }
+
+      @include breakpoint-down(lg) {
+        @include font-height(17.5, 28);
+      }
+
+      @include breakpoint-down(sm) {
+        @include font-height(16, 28);
+      }
+    }
+  }
+
+  .img-column {
+    @include breakpoint-down(lg) {
+      @include flex-row-center-nowrap;
+    }
+
+    @include breakpoint-down(md) {
+      margin-top: toRem(80) !important;
+    }
+
+    img {
+      @include breakpoint-down(lg) {
+        width: toRem(320);
+        height: auto;
+      }
+
+      @include breakpoint-down(sm) {
+        width: toRem(280);
+      }
     }
   }
 }
