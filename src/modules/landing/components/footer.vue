@@ -147,6 +147,10 @@ export default {
     .tagline {
       @include font-height(19, 32);
       width: 60%;
+
+      @include breakpoint-down(lg) {
+        width: 100%;
+      }
     }
 
     .social-icons {
@@ -196,6 +200,14 @@ export default {
   }
 
   .footer-right {
+    @include flex-column-end-end;
+    width: 40%;
+
+    @include breakpoint-down(md) {
+      @include flex-column-start-start;
+      width: 100%;
+    }
+
     .nav-item {
       @include generate-font-type("primary-1");
       font-family: "Roobert-Bold", sans-serif;

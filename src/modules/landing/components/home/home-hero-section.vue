@@ -21,7 +21,6 @@
           <a
             class="btn btn-lg btn-primary roobert-500"
             :href="`${$app_url}/contact-sales`"
-            target="_blank"
             >Contact Sales</a
           >
         </div>
@@ -62,6 +61,10 @@ export default {
     padding: toRem(100) 0;
   }
 
+  @include breakpoint-custom-down(820) {
+    height: auto;
+  }
+
   @include breakpoint-down(md) {
     padding: toRem(80) 0;
   }
@@ -69,21 +72,36 @@ export default {
   .content-wrapper {
     @include flex-row-between-nowrap;
 
+    @include breakpoint-custom-down(820) {
+      @include flex-column-center;
+    }
+
     .content-block {
       width: 60%;
 
+      @include breakpoint-down(xl) {
+        width: 55%;
+      }
+
+      @include breakpoint-custom-down(820) {
+        width: 100%;
+      }
+
       .hero-title {
         @include breakpoint-down(xl) {
-          @include font-height(52, 58);
+          @include font-height(64, 72);
         }
 
         @include breakpoint-down(lg) {
-          @include font-height(46, 54);
+          @include font-height(46, 58);
+        }
+
+        @include breakpoint-custom-down(820) {
+          text-align: center;
         }
 
         @include breakpoint-down(md) {
           @include font-height(48, 54);
-          text-align: center;
         }
 
         @include breakpoint-down(sm) {
@@ -95,8 +113,14 @@ export default {
         width: 80%;
 
         @include breakpoint-down(xl) {
-          @include font-height(20, 28);
+          @include font-height(23, 32);
           width: 100%;
+        }
+
+        @include breakpoint-custom-down(820) {
+          text-align: center;
+          margin: 0 auto;
+          width: 75%;
         }
 
         @include breakpoint-down(md) {
@@ -115,12 +139,17 @@ export default {
         @include flex-row-start-nowrap;
         gap: toRem(24);
 
+        @include breakpoint-custom-down(820) {
+          margin-bottom: toRem(30);
+          width: 100%;
+        }
+
         .btn {
           padding: toRem(17) toRem(52);
           width: toRem(204);
           white-space: nowrap;
 
-          @include breakpoint-down(md) {
+          @include breakpoint-custom-down(820) {
             margin: 0 auto;
           }
         }
@@ -131,6 +160,22 @@ export default {
       position: relative;
       left: toRem(40);
       width: 40%;
+
+      @include breakpoint-down(xl) {
+        left: 0;
+        width: 45%;
+      }
+
+      @include breakpoint-custom-down(920) {
+        left: toRem(-50px);
+        overflow: hidden;
+      }
+
+      @include breakpoint-custom-down(820) {
+        @include flex-row-center-nowrap;
+        width: 100%;
+        left: 0;
+      }
 
       @include breakpoint-down(md) {
         @include flex-row-center-nowrap;

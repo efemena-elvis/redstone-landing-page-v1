@@ -23,8 +23,37 @@ export default {
   gap: toRem(24);
   padding: toRem(80);
 
+  @include breakpoint-down(lg) {
+    padding: toRem(80) toRem(60);
+  }
+
+  @include breakpoint-down(md) {
+    padding: toRem(70) toRem(24);
+    gap: toRem(16);
+  }
+
+  .title-text {
+    @include breakpoint-down(lg) {
+      font-size: toRem(58);
+    }
+
+    @include breakpoint-down(md) {
+      font-size: toRem(40);
+    }
+  }
+
   .description-text {
     width: 66%;
+
+    @include breakpoint-down(lg) {
+      font-size: toRem(20);
+      width: 90%;
+    }
+
+    @include breakpoint-down(md) {
+      font-size: toRem(18);
+      width: 100%;
+    }
   }
 }
 </style>
