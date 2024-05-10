@@ -95,8 +95,13 @@
 
       <!-- COPYRIGHT TEXT -->
       <div class="row copyright-row">
+        <div class="col-12 col-md-6 copyright-row--left">
+          <router-link to="/privacy-policy">Privacy Policy</router-link>
+          <router-link to="/terms">Terms of Use</router-link>
+        </div>
+
         <div
-          class="copyright-text col-12 grey-600 text-center tertiary-1-text roobert-400"
+          class="col-12 col-md-6 copyright-row--right tertiary-1-text roobert-400"
         >
           Copyright {{ current_year }}. Redstone, Zambia Ltd.
         </div>
@@ -189,7 +194,6 @@ export default {
   .info-text {
     // @include generate-font-type("tertiary-1");
     @include font-height(18, 22);
-    color: getColor("grey-600");
     font-family: "Roobert-Medium", sans-serif;
     color: getColor("grey-700");
     display: block;
@@ -269,11 +273,31 @@ export default {
   }
 
   .copyright-row {
+    @include flex-row-between-wrap;
     border-top: toRem(0.5) solid getColor("grey-100");
     padding: toRem(50) 0;
 
-    .copyright-text {
+    .copyright-row--left {
+      @include flex-row-start-wrap;
+      gap: toRem(24);
+
+      a {
+        font-family: "Roobert-Medium", sans-serif;
+        @include font-height(17, 22);
+        color: getColor("grey-600");
+
+        &:hover {
+          color: getColor("green-600");
+        }
+      }
+    }
+
+    .copyright-row--right {
+      color: getColor("grey-700");
+      text-align: right;
+
       @include breakpoint-down(sm) {
+        text-align: left;
         font-size: toRem(15);
       }
     }

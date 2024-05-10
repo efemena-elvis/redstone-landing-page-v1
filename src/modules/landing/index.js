@@ -33,6 +33,24 @@ const landingRoutes = [
             "@/modules/landing/pages/contact-sales"
           ),
       },
+      {
+        path: "/privacy-policy",
+        name: "PrivacyPolicy",
+        component: () =>
+          import(
+            /* webpackChunkName: "landing-module" */
+            "@/modules/landing/pages/privacy-policy"
+          ),
+      },
+      {
+        path: "/terms",
+        name: "TermsOfUse",
+        component: () =>
+          import(
+            /* webpackChunkName: "landing-module" */
+            "@/modules/landing/pages/terms"
+          ),
+      },
     ],
   },
 ];
