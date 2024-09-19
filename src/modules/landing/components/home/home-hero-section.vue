@@ -18,10 +18,10 @@
             >Get Started</a
           > -->
 
-          <a
+          <router-link
             class="btn btn-lg btn-primary roobert-500"
-            :href="`${$app_url}/contact-sales`"
-            >Contact Sales</a
+            to="/contact-sales"
+            >Contact Sales</router-link
           >
         </div>
       </div>

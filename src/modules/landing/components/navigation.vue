@@ -22,10 +22,10 @@
 
           <!-- NAV BUTTONS -->
           <div class="nav-buttons">
-            <a
-              :href="`${$app_url}/contact-sales`"
+            <router-link
+              to="/contact-sales"
               class="btn btn-tertiary btn-md roobert-500"
-              >Contact Sales</a
+              >Contact Sales</router-link
             >
           </div>
         </div>

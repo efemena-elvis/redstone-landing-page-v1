@@ -9,8 +9,8 @@
     <CallToActionSection />
   </div>
 </template>
-  
-  <script>
+
+<script>
 import ContactBanner from "@/modules/landing/components/contact/contact-banner";
 import ContactArea from "@/modules/landing/components/contact/contact-area";
 
@@ -19,7 +19,6 @@ export default {
 
   metaInfo: {
     title: "Contact Sales",
-    // titleTemplate: "%s - Redstone",
   },
 
   components: {
@@ -32,10 +31,9 @@ export default {
   },
 };
 </script>
-  
-  <style lang="scss" scoped>
+
+<style lang="scss" scoped>
 .home-container {
   min-height: 100vh;
 }
 </style>
-  
