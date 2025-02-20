@@ -44,6 +44,12 @@
           </NuxtLink>
           <NuxtLink
             class="text-muted-foreground block hover:text-primary transition-colors hover:underline"
+            to="/dispute"
+          >
+            Dispute
+          </NuxtLink>
+          <NuxtLink
+            class="text-muted-foreground block hover:text-primary transition-colors hover:underline"
             to="/privacy-policy"
           >
             Privacy poilcy
