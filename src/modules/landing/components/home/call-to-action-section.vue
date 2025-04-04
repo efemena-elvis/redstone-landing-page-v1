@@ -1,9 +1,9 @@
 <template>
-  <div class="cta-block teal-900-bg">
+  <div class="cta-block teal-700-bg">
     <div class="vesicash-container">
       <!-- HEADER TEXT -->
       <h1 class="header-text text-center h1-text roobert-700 neutral-10 mgb-32">
-        Ready to take your business to the next level with Redstone?
+        Ready to take your business to the next level with AlexPay?
       </h1>
 
       <!-- DESCRIPTION TEXT -->

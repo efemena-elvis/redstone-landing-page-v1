@@ -8,9 +8,11 @@
       <div class="navigation-section smooth-transition">
         <router-link :to="{ name: 'RedstoneHome' }" class="brand-logo">
           <img
-            v-lazy="loadImage('redstone-logo.svg', 'landing')"
-            alt="Redstone Logo"
+            v-lazy="loadImage('alex-pay.png', 'landing')"
+            alt="AlexPay Logo"
+            class="logo"
           />
+          <span class="brand-name">AlexPay</span>
         </router-link>
 
         <!-- NAVIGATIONS -->
@@ -74,6 +76,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.logo {
+  width: 120px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.brand-name {
+  color: black;
+  font-size: 17px;
+  font-weight: 500;
+}
 .navigation-section {
   @include flex-row-between-nowrap;
   padding: toRem(20) 0;

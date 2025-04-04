@@ -27,7 +27,7 @@ export default {
   name: "RedstoneHomePage",
 
   metaInfo: {
-    title: "Redstone",
+    title: "AlexPay",
     // titleTemplate: "%s - Redstone",
   },
 

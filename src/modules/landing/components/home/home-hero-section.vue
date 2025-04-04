@@ -7,7 +7,7 @@
         </div>
 
         <div class="hero-description h6-text grey-500 roobert-400 mgb-40">
-          Redstone makes payment collection and settlement  simple and reliable.
+          AlexPay makes payment collection and settlement  simple and reliable.
         </div>
 
         <div class="action-row">

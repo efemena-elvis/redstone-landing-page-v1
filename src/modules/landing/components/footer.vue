@@ -11,7 +11,7 @@
           </div>
 
           <div class="tagline grey-700 roobert-400">
-            Redstone makes payment collection and settlement  simple and
+            AlexPay makes payment collection and settlement  simple and
             reliable.
           </div>
 
@@ -65,6 +65,10 @@
             class="info-text mgb-16"
             >sales@redstonepgs.com
           </a>
+
+          <div class="info-text mgb-16 text-right address">
+            No 30 Independence Avenue, P. O. Box CT 5363, Cantonments - Accra
+          </div>
         </div>
 
         <!-- NAVIGATION LINKS CONTAINER -->
@@ -103,7 +107,7 @@
         <div
           class="col-12 col-md-6 copyright-row--right tertiary-1-text roobert-400"
         >
-          Copyright {{ current_year }}. Redstone, Zambia Ltd.
+          Copyright {{ current_year }}. AlexPay, Accra Ltd.
         </div>
       </div>
     </div>
@@ -132,6 +136,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.address {
+  text-align: right;
+}
 .footer-section {
   margin-top: toRem(100);
 

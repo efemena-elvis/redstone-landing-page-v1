@@ -5,7 +5,7 @@
     </div>
 
     <div class="description-text h6-text grey-600 roobert-400 text-center">
-      Redstone’s team of professionals are committed to the highest standards in
+      AlexPay's team of professionals are committed to the highest standards in
       regards to the quality of work we offer our customers.
     </div>
   </div>
