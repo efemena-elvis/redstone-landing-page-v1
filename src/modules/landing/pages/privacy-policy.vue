@@ -8,7 +8,7 @@
         </h1>
 
         <div class="content-text sub-header-text">
-          This Privacy Policy describes your privacy rights regarding AlexPay
+          This Privacy Policy describes your privacy rights regarding Alexpay
           (“we”, “us” or “our”) collection, use, storage, sharing and protection
           of your personal information. It applies to our website, APIs,
           services and tools regardless of how you access or use them. This
@@ -22,20 +22,20 @@
           <div class="title-text">1. About Us</div>
 
           <div class="content-text margin-32">
-            The AlexPay Payment Services Terms set out the agreement between us
-            AlexPay Zambia Limited, Zambia, and you, the person who has
+            The Alexpay Payment Services Terms set out the agreement between us
+            Alexpay Zambia Limited, Zambia, and you, the person who has
             completed the on-line application process on our secure customer
             website (the Vesicash platform).
           </div>
         </template>
 
         <template>
-          <div class="title-text">2. Changes to AlexPay privacy policy</div>
+          <div class="title-text">2. Changes to Alexpay privacy policy</div>
 
           <div class="content-text margin-32">
             We may decide to change our privacy policy as our technology and
             service evolves and our users will be notified via this page or any
-            means available to reach our users. AlexPay reserves the right to
+            means available to reach our users. Alexpay reserves the right to
             update, modify or amend this as may be deemed required at any time
             in the future.
           </div>
@@ -46,8 +46,8 @@
 
           <div class="content-text margin-32">
             <div class="margin-32">
-              To have access to the AlexPay platform and services, it requires
-              you to have a AlexPay account. When you register for the AlexPay
+              To have access to the Alexpay platform and services, it requires
+              you to have a Alexpay account. When you register for the Alexpay
               account, you voluntarily supply us with some personal information
               which we collect by lawful means.
             </div>
@@ -63,14 +63,14 @@
 
               <ul>
                 <li class="margin-24">
-                  Contact information. As part of our operations, AlexPay may
+                  Contact information. As part of our operations, Alexpay may
                   collect information such as your name, telephone number, email
                   address, address, etc. to provide you with certain services.
                 </li>
 
                 <li class="margin-24">
                   Payment information. If you make a purchase or other financial
-                  transaction, such as when you checkout with AlexPay on a
+                  transaction, such as when you checkout with Alexpay on a
                   Merchant’s website, we collect credit card numbers, financial
                   account information, and other payment details.
                 </li>
@@ -180,7 +180,7 @@
             <ul>
               <li class="margin-24">
                 To operate the website(s) and provide the Services to you and
-                other AlexPay Users including:
+                other Alexpay Users including:
               </li>
 
               <ul>
@@ -210,15 +210,15 @@
               <li class="margin-24">
                 To manage our business needs, such as monitoring, analyzing,
                 protecting the integrity and improving the Services offered and
-                supplied to you and other AlexPay users, and improving the
+                supplied to you and other Alexpay users, and improving the
                 Services and the website(s) performance and functionality. For
-                example we analyze AlexPay User behavior and interaction and
+                example we analyze Alexpay User behavior and interaction and
                 perform research about the way you use our website(s) and our
                 Services;
               </li>
 
               <li class="margin-24">
-                To manage risk and protect you and other AlexPay Users from
+                To manage risk and protect you and other Alexpay Users from
                 financial crime, for example by verifying your identity,
                 banking, payment and other financial details, products and goods
                 subject to any transaction(s) and helping to detect and prevent
@@ -244,15 +244,15 @@
 
                 <li class="margin-24">
                   Manage our everyday business needs, such as managing risk,
-                  analyzing, monitoring and protecting AlexPay, you and other
-                  AlexPay Users;
+                  analyzing, monitoring and protecting Alexpay, you and other
+                  Alexpay Users;
                 </li>
 
                 <li class="margin-24">
                   Anonymise personal data in order to provide Aggregated Data to
                   third parties, including other businesses and members of the
                   public, as well as for own use, about how, when, and why
-                  AlexPay Users visit our website(s) or use our Services;
+                  Alexpay Users visit our website(s) or use our Services;
                 </li>
 
                 <li class="margin-24">
@@ -276,7 +276,7 @@
 
           <div class="content-text">
             <div class="margin-24">
-              AlexPay does not sell, trade or rent personal data to anyone.
+              Alexpay does not sell, trade or rent personal data to anyone.
               Further, we will not share or disclose your data with or to a
               third party without your consent except as necessary to provide
               the Services or as described in this Privacy Policy.
@@ -303,7 +303,7 @@
                 screening and identity verification services may need access to
                 personal data to provide those functions. The processing by such
                 third parties shall be governed by a written contract with
-                AlexPay to ensure adequate protection and security measures are
+                Alexpay to ensure adequate protection and security measures are
                 put in place for the protection of personal data in accordance
                 with the terms of this Privacy Policy.
               </li>
@@ -404,7 +404,7 @@
             <div class="margin-24">
               Please note that merchants, sellers, and other Users you buy from
               or contract with have their respective privacy policies, and
-              although AlexPay’s Merchant Terms of Use does not allow the other
+              although Alexpay’s Merchant Terms of Use does not allow the other
               transacting party to use your information for anything other than
               as authorized by you, Paystack is not responsible for their
               actions, including their data protection practices. If you provide

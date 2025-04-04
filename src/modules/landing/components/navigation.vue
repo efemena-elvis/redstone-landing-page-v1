@@ -9,10 +9,10 @@
         <router-link :to="{ name: 'RedstoneHome' }" class="brand-logo">
           <img
             v-lazy="loadImage('alex-pay.png', 'landing')"
-            alt="AlexPay Logo"
+            alt="Alexpay Logo"
             class="logo"
           />
-          <span class="brand-name">AlexPay</span>
+          <!-- <span class="brand-name">Alexpay</span> -->
         </router-link>
 
         <!-- NAVIGATIONS -->

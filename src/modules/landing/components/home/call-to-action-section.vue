@@ -3,7 +3,7 @@
     <div class="vesicash-container">
       <!-- HEADER TEXT -->
       <h1 class="header-text text-center h1-text roobert-700 neutral-10 mgb-32">
-        Ready to take your business to the next level with AlexPay?
+        Ready to take your business to the next level with Alexpay?
       </h1>
 
       <!-- DESCRIPTION TEXT -->

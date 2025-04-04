@@ -13,7 +13,7 @@
           class="copy-section col-12 col-md-6 col-lg-5 order-0 order-lg-1 mb-5 mb-md-0"
         >
           <h2 class="title-text h1-text roobert-700 grey-900 mgb-24">
-            AlexPay is right for you
+            Alexpay is right for you
           </h2>
 
           <h5 class="description-text h6-text roobert-400 grey-600">

@@ -12,10 +12,10 @@
 
           <div class="content-text margin-32">
             <div class="margin-24">
-              This AlexPay Payment Services Terms set out the agreement between
-              us AlexPay Zambia Limited, Zambia and you, the person who has
+              This Alexpay Payment Services Terms set out the agreement between
+              us Alexpay Zambia Limited, Zambia and you, the person who has
               completed the on-line application process on our secure customer
-              website (the AlexPay platform).
+              website (the Alexpay platform).
             </div>
 
             <div class="margin-32">
@@ -33,7 +33,7 @@
           <div class="title-text">Our Company Information</div>
 
           <div class="content-text margin-32">
-            We are AlexPay Zambia Limited; a company registered under the laws
+            We are Alexpay Zambia Limited; a company registered under the laws
             of the Republic of Zambia. Our registered office is at 4 Bishops Rd,
             Kabulonga Lusaka, Zambia.
           </div>
@@ -44,7 +44,7 @@
 
           <div class="content-text margin-32">
             You may use the Services only if you agree to form a binding
-            contract with AlexPay and are not a person barred from receiving
+            contract with Alexpay and are not a person barred from receiving
             services under the laws of the applicable jurisdiction. If you are
             accepting these Terms and using the Services on behalf of a company,
             business, or organization, you represent and warrant that you are
@@ -111,14 +111,14 @@
           <div class="title-text">Indemnification</div>
 
           <div class="content-text margin-32">
-            You hereby indemnify AlexPay and undertake to keep AlexPay, its
+            You hereby indemnify Alexpay and undertake to keep Alexpay, its
             staff and affiliates indemnified against any losses, damages, costs,
             liabilities and expenses (including without limitation reasonable
             legal fees and expenses) arising out of any breach by you of any
             provision of these Terms, or arising out of any claim that you have
             breached any provision of these Terms. You will indemnify and hold
             Redstoe harmless from and against any claim, suit or proceedings
-            brought against AlexPay arising from or in connection with
+            brought against Alexpay arising from or in connection with
             violations of intellectual property or other rights of third parties
             in relation to your use of the Services.
           </div>
@@ -128,9 +128,9 @@
           <div class="title-text">Breach of these Terms</div>
 
           <div class="content-text margin-32">
-            Without prejudice to AlexPay's other rights under these Terms, if
-            you breach these Terms in any way, AlexPay may take such action as
-            AlexPay deems appropriate to deal with the breach, including
+            Without prejudice to Alexpay's other rights under these Terms, if
+            you breach these Terms in any way, Alexpay may take such action as
+            Alexpay deems appropriate to deal with the breach, including
             suspending your access to the website, prohibiting you from
             accessing the website, blocking computers using your IP address from
             accessing the website, contacting your internet service provider
@@ -166,18 +166,18 @@
           <div class="title-text">Data Privacy and Protection</div>
 
           <div class="content-text margin-32">
-            AlexPay recognizes the importance of protecting the privacy of those
-            who visit and choose to use the Flutterwave Services. AlexPay
+            Alexpay recognizes the importance of protecting the privacy of those
+            who visit and choose to use the Flutterwave Services. Alexpay
             remains compliant with the Payment Card Industry Data Security
             Standard (PCI/DSS) requirement to the extent applicable. Please note
             that such requirements may be amended from time to time. With
             respect to all the Personal Information belonging to, and/or
-            processed in connection with AlexPay or this website, such Personal
+            processed in connection with Alexpay or this website, such Personal
             Information at all times are in compliance with all Data Protection
             Laws in the territory, in all respects and all applicable data
-            protection regulation in force. AlexPay maintains a Privacy Notice
+            protection regulation in force. Alexpay maintains a Privacy Notice
             which provides an overview of the Personal Information we collect
-            about you or that you provide to us. By using the AlexPay Services,
+            about you or that you provide to us. By using the Alexpay Services,
             you consent to such processing and you warrant to provide accurate
             information.
           </div>
@@ -199,24 +199,24 @@
 
           <div class="content-text margin-32">
             <div class="margin-24">
-              You may terminate your agreement with AlexPay ceasing to use
-              AlexPay Services. We may suspend or terminate our Services to you
+              You may terminate your agreement with Alexpay ceasing to use
+              Alexpay Services. We may suspend or terminate our Services to you
               at any time, for any reason including without limitation, breach
               of these Terms, fraud, impersonation, etc.
             </div>
 
             <div class="margin-24">
-              Upon termination, your right to use the AlexPay Services or
+              Upon termination, your right to use the Alexpay Services or
               platform will immediately cease.
             </div>
           </div>
         </template>
 
         <template>
-          <div class="title-text">Changes to the AlexPay Terms of Use</div>
+          <div class="title-text">Changes to the Alexpay Terms of Use</div>
 
           <div class="content-text margin-32">
-            AlexPay reserves the right to change, revise or modify these Terms
+            Alexpay reserves the right to change, revise or modify these Terms
             from time to time by updating this page. The changes will not be
             retroactive, and the most current version of the Terms which will
             always be on this page will continue to govern our relationship with
@@ -233,11 +233,11 @@
 
           <div class="content-text margin-32">
             These Terms supersede and extinguish all previous agreements between
-            you and AlexPay whether written or oral, relating to its subject
+            you and Alexpay whether written or oral, relating to its subject
             matter. In the event that any of these Terms is held to be invalid
             or unenforceable, then that provision will be limited or eliminated
             to the minimum extent necessary, and the remaining provisions of
-            these Terms will remain subsisting and in full effect. AlexPay's
+            these Terms will remain subsisting and in full effect. Alexpay's
             failure to enforce any right or provision of these Terms will not be
             deemed a waiver of such right or provision.
           </div>

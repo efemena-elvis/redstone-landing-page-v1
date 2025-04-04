@@ -6,14 +6,14 @@
           <div class="brand-logo mgb-24">
             <img
               v-lazy="loadImage('alex-pay.png', 'landing')"
-              alt="AlexPay Logo"
+              alt="Alexpay Logo"
               class="logo"
             />
-            <span class="brand-name">AlexPay</span>
+            <!-- <span class="brand-name">Alexpay</span> -->
           </div>
 
           <div class="tagline grey-700 roobert-400">
-            AlexPay makes payment collection and settlement  simple and
+            Alexpay makes payment collection and settlement  simple and
             reliable.
           </div>
 
@@ -55,18 +55,18 @@
 
         <div class="col-12 col-sm-12 col-md-3 footer-right mgt-52">
           <a
-            href="mailto:support@redstonepgs.com
+            href="mailto:commercial@alexpay.com
 "
             class="info-text mgb-16"
-            >support@redstonepgs.com
+            >commercial@alexpay.com
           </a>
 
-          <a
+          <!-- <a
             href="mailto:sales@redstonepgs.com
 "
             class="info-text mgb-16"
             >sales@redstonepgs.com
-          </a>
+          </a> -->
 
           <div class="info-text mgb-16 text-right address">
             No 30 Independence Avenue, P. O. Box CT 5363, Cantonments - Accra
@@ -109,7 +109,7 @@
         <div
           class="col-12 col-md-6 copyright-row--right tertiary-1-text roobert-400"
         >
-          Copyright {{ current_year }}. AlexPay, Accra Ltd.
+          Copyright {{ current_year }}. Alexpay, Accra Ltd.
         </div>
       </div>
     </div>
