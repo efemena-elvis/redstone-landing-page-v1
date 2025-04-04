@@ -1,5 +1,5 @@
 <template>
-  <div class="cta-block teal-700-bg">
+  <div class="cta-block teal-600-bg">
     <div class="vesicash-container">
       <!-- HEADER TEXT -->
       <h1 class="header-text text-center h1-text roobert-700 neutral-10 mgb-32">

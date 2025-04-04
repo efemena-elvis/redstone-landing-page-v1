@@ -13,7 +13,7 @@
           class="copy-section col-12 col-md-6 col-lg-5 order-0 order-lg-1 mb-5 mb-md-0"
         >
           <h2 class="title-text h1-text roobert-700 grey-900 mgb-24">
-            Redstone is right for you
+            AlexPay is right for you
           </h2>
 
           <h5 class="description-text h6-text roobert-400 grey-600">
@@ -93,13 +93,13 @@
     </div>
   </div>
 </template>
-    
-  <script>
+
+<script>
 export default {
   name: "ServiceSection",
 };
 </script>
-    
+
 <style lang="scss" scoped>
 .payment-section {
   padding: toRem(100) 0 toRem(120);
@@ -232,4 +232,3 @@ export default {
   }
 }
 </style>
-    

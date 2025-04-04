@@ -5,9 +5,11 @@
         <div class="col-12 col-sm-12 col-md-6 footer-left">
           <div class="brand-logo mgb-24">
             <img
-              v-lazy="loadImage('redstone-logo.svg', 'landing')"
-              alt="Redstone Logo"
+              v-lazy="loadImage('alex-pay.png', 'landing')"
+              alt="AlexPay Logo"
+              class="logo"
             />
+            <span class="brand-name">AlexPay</span>
           </div>
 
           <div class="tagline grey-700 roobert-400">
@@ -138,6 +140,17 @@ export default {
 <style lang="scss" scoped>
 .address {
   text-align: right;
+}
+.logo {
+  width: 120px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.brand-name {
+  color: black;
+  font-size: 17px;
+  font-weight: 500;
 }
 .footer-section {
   margin-top: toRem(100);
