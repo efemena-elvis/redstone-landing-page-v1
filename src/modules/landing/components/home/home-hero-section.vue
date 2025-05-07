@@ -28,7 +28,7 @@
 
       <div class="hero-img-wrapper">
         <img
-          v-lazy="loadImage('hero-illustration.svg', 'landing')"
+          v-lazy="loadImage('alex-pay-illustration.png', 'landing')"
           alt="Hero illustration"
         />
       </div>

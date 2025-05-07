@@ -25,7 +25,7 @@
             The Alexpay Payment Services Terms set out the agreement between us
             Alexpay Zambia Limited, Zambia, and you, the person who has
             completed the on-line application process on our secure customer
-            website (the Vesicash platform).
+            website (the Alexpay platform).
           </div>
         </template>
 
@@ -191,7 +191,7 @@
 
                 <li class="margin-24">
                   Communicate with you about the Services, the website(s), or
-                  Vesicash;
+                  Alexpay;
                 </li>
 
                 <li class="margin-24">

@@ -117,7 +117,7 @@
             legal fees and expenses) arising out of any breach by you of any
             provision of these Terms, or arising out of any claim that you have
             breached any provision of these Terms. You will indemnify and hold
-            Redstoe harmless from and against any claim, suit or proceedings
+            Alexpay harmless from and against any claim, suit or proceedings
             brought against Alexpay arising from or in connection with
             violations of intellectual property or other rights of third parties
             in relation to your use of the Services.
@@ -248,7 +248,7 @@
 
           <div class="content-text margin-32">
             If you have any complaints about us and our Services, you may
-            contact us at hello@redstonepgs.com
+            contact us at commercial@alexpay.com
           </div>
         </template>
       </div>
