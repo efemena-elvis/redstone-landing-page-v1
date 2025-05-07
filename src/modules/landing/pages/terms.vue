@@ -13,7 +13,7 @@
           <div class="content-text margin-32">
             <div class="margin-24">
               This Alexpay Payment Services Terms set out the agreement between
-              us Alexpay Zambia Limited, Zambia and you, the person who has
+              us Alexpay Ghana Limited, Ghana and you, the person who has
               completed the on-line application process on our secure customer
               website (the Alexpay platform).
             </div>
@@ -33,9 +33,9 @@
           <div class="title-text">Our Company Information</div>
 
           <div class="content-text margin-32">
-            We are Alexpay Zambia Limited; a company registered under the laws
-            of the Republic of Zambia. Our registered office is at 4 Bishops Rd,
-            Kabulonga Lusaka, Zambia.
+            We are Alexpay Ghana Limited; a company registered under the laws of
+            the Republic of Ghana. Our registered office is at 4 Bishops Rd,
+            Kabulonga Lusaka, Ghana.
           </div>
         </template>
 
@@ -188,8 +188,8 @@
 
           <div class="content-text margin-32">
             These Terms shall be interpreted and governed in accordance with the
-            Laws of the Republic of Zambia and you submit to the non-exclusive
-            jurisdiction of the Courts located in Zambia for the resolution of
+            Laws of the Republic of Ghana and you submit to the non-exclusive
+            jurisdiction of the Courts located in Ghana for the resolution of
             any dispute.
           </div>
         </template>

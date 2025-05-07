@@ -23,9 +23,9 @@
 
           <div class="content-text margin-32">
             The Alexpay Payment Services Terms set out the agreement between us
-            Alexpay Zambia Limited, Zambia, and you, the person who has
-            completed the on-line application process on our secure customer
-            website (the Alexpay platform).
+            Alexpay Ghana Limited, Ghana, and you, the person who has completed
+            the on-line application process on our secure customer website (the
+            Alexpay platform).
           </div>
         </template>
 
@@ -171,7 +171,7 @@
           <div class="content-text">
             <div class="margin-24">
               We may process your personal data for a variety of reasons that
-              are justified and are allowed under data protection laws in Zambia
+              are justified and are allowed under data protection laws in Ghana
               which forms the legal basis on how we process your personal data.
               Most commonly, we will use your personal data in the following
               circumstances:
